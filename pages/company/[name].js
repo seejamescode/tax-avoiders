@@ -20,7 +20,6 @@ const Candidate = styled.div`
   align-content: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   h4 {
     padding-top: 1rem;
