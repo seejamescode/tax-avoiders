@@ -1,44 +1,22 @@
 import React from "react";
 import fetch from "isomorphic-unfetch";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 import styled from "styled-components";
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from "victory";
-import Share from "../../components/share";
-import deficit from "../../data/deficit";
+import SectionHow from "../../components/section-how";
+import SectionWhy from "../../components/section-why";
 import formatMoney from "../../utils/format-money";
 import getUrl from "../../utils/get-url";
 
 const Answer = styled.p`
-  color: ${({ bad }) => (bad ? "#a0282d" : "inherit")};
+  color: ${({ bad, theme }) => (bad ? theme.colors.badRed : "inherit")};
   font-size: ${({ theme }) => theme.type.c};
   margin: 0 auto;
   text-align: center;
 `;
 
-const Candidate = styled.div`
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-
-  h4 {
-    padding-top: 1rem;
-  }
-
-  * {
-    margin: 0 auto;
-  }
-`;
-
-const Candidates = styled.div`
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-
-  img {
-    border-radius: 50%;
-    width: 100%;
-  }
+const Bad = styled.span`
+  color: ${({ theme }) => theme.colors.badRed};
+  font-weight: bold;
 `;
 
 const Container = styled.div`
@@ -46,7 +24,7 @@ const Container = styled.div`
   grid-gap: 2rem;
   justify-content: center;
   margin: 0 auto;
-  max-width: 23rem;
+  max-width: 30rem;
   width: 100%;
 
   a,
@@ -67,7 +45,12 @@ const Source = styled.li`
 `;
 
 function Page(props) {
-  const { name, profit, tax, url } = props;
+  console.log(props);
+  const { details, name, profit, tax, url } = props;
+  const isDonatingToPacs =
+    details && details.gave_to_pac && details.gave_to_pac > 0;
+  const isLobbying = details && details.lobbying && details.lobbying > 0;
+  const isLobbyingAndPacs = isDonatingToPacs && isLobbying;
   const nameEncoded = encodeURIComponent(name.split("&").join("[ampersand]"));
   const rateRough = tax / profit;
   const rate =
@@ -75,7 +58,6 @@ function Page(props) {
       ? Math.round((rateRough + Number.EPSILON) * 100) / 100
       : rateRough;
   const rateFormatted = `${(rate * 100).toFixed(2).replace(".00", "")}%`;
-
   const isRateShort = rate < 21;
   const profitFormatted = formatMoney(profit);
   const taxFormatted = formatMoney(tax);
@@ -86,8 +68,12 @@ function Page(props) {
       ? "Almost."
       : rate >= 0.12
       ? "Not quite."
-      : rate >= 0
+      : rate >= 0.07
+      ? "No."
+      : rate > 0
       ? "Not even close."
+      : rate === 0
+      ? "No. They didn’t pay any taxes in 2018."
       : "No. In fact, they got a tax refund! What in the world...";
   const answerMath =
     tax > 0 ? (
@@ -108,22 +94,30 @@ function Page(props) {
       <>
         <p>
           Turns out, {name} is a good corporate citizen when it comes to paying
-          their fair share. Woohoo!
+          their fair share.
         </p>
         <p>
-          But, there are plenty of companies that aren’t, unfortunately.{" "}
-          <Link href="/" passHref>
-            <a>Research more of them here</a>
-          </Link>
-          .
+          Still, 324 of Fortune 500 companies are not paying their fair share.
         </p>
+
+        <SectionWhy />
+        <SectionHow name={name} nameEncoded={nameEncoded} url={url} />
       </>
     ) : rate >= 0.18 ? (
-      <p>
-        Turns out, {name} is a decent corporate citizen. But the corporate tax
-        rate is 21% so they missed the mark by{" "}
-        {formatMoney((0.21 - rate) * profit)}. There’s more work to be done!
-      </p>
+      <>
+        <p>
+          Turns out, {name} is a decent corporate citizen. But the federal
+          corporate tax rate is 21% so they missed the mark by{" "}
+          {formatMoney((0.21 - rate) * profit)}. Imagine how that much more
+          money could contribute to the public good or pay down our federal
+          budget deficit.
+        </p>
+        <p>
+          Still, 324 of Fortune 500 companies are not paying their fair share.
+        </p>
+        <SectionWhy />
+        <SectionHow name={name} nameEncoded={nameEncoded} url={url} />
+      </>
     ) : (
       <>
         <h3>But how did this happen?</h3>
@@ -153,9 +147,93 @@ function Page(props) {
           They literally ask for the loopholes. In meetings. Or swanky parties.
           With politicians in Washington.
         </p>
+        <h3>What’s going on here?</h3>
+        <p>
+          Companies aren’t required to release their full tax returns, so it’s
+          hard to know exactly why {name}’s effective tax rate was{" "}
+          {rateFormatted}. However, corporations have access to myriad tax
+          credits or abatements that affect their effective tax rate, making it
+          possible to avoid paying the flat 21% tax rate. Some federal tax
+          credits are progressive—they’re given to incentivize behavior meant to
+          keep jobs in the US, protect the environment, and contribute to local
+          communities (though there’s debate about how much “good” these
+          actually do). However, others seem highly unfair, like the commonly
+          used option to take a tax deferral, which can incentivize companies to
+          keep profits in countries outside the U.S. to avoid paying taxes on
+          them.
+        </p>
+        <p>U.S. tax law is endlessly complex.</p>
+        {isLobbyingAndPacs ? (
+          <>
+            <h3>But also...</h3>
+            <p>
+              We know that {name} spent{" "}
+              <Bad>{formatMoney(details.lobbying)}</Bad> lobbying and donated an
+              additional <Bad>{formatMoney(details.gave_to_pac)}</Bad> to
+              Political Action Committees for the {details.cycle} cycle.
+            </p>
+            <p>
+              For corporations, lobbying literally means hiring people to go to
+              Washington, meet with politicians, and seek to influence their
+              votes and decision-making. Lobbying is both complex and subtle;
+              you can learn more about it{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Lobbying_in_the_United_States#Lobbying_as_a_business"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                here
+              </a>
+              . But it’s entirely legal. PACs are another way companies seek to
+              influence politics—by legally donating money to help or hurt
+              politicians' election campaigns.
+            </p>
+          </>
+        ) : isLobbying ? (
+          <>
+            <h3>But also...</h3>
+            <p>
+              We know that {name} spent{" "}
+              <Bad>{formatMoney(details.lobbying)}</Bad> lobbying for the{" "}
+              {details.cycle} cycle.
+            </p>
+            <p>
+              For corporations, lobbying literally means hiring people to go to
+              Washington, meet with politicians, and seek to influence their
+              votes and decision-making. Lobbying is both complex and subtle;
+              you can learn more about it{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Lobbying_in_the_United_States#Lobbying_as_a_business"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                here
+              </a>
+              . But it’s entirely legal.
+            </p>
+          </>
+        ) : isDonatingToPacs ? (
+          <>
+            <h3>But also...</h3>
+            <p>
+              We know that {name} donated{" "}
+              <Bad>{formatMoney(details.gave_to_pac)}</Bad> to Political Action
+              Committees for the {details.cycle} cycle.
+            </p>
+            <p>
+              For corporations, PACs are another way companies seek to influence
+              politics—by legally donating money to help or hurt politicians'
+              election campaigns.
+            </p>
+          </>
+        ) : (
+          ""
+        )}
+        <SectionHow name={name} nameEncoded={nameEncoded} url={url} />
+        <SectionWhy />
       </>
     );
-  console.log(url);
+
   return (
     <Container>
       <NextSeo
@@ -173,9 +251,7 @@ function Page(props) {
           site_name: "Tax Avoiders",
           title: `${name} | Tax Avoiders`,
           type: "website",
-          url: `${url}company/${encodeURIComponent(
-            name.split("&").join("[ampersand]")
-          )}`
+          url: `${url}company/${nameEncoded}`
         }}
         title={`${name} | Tax Avoiders`}
         twitter={{
@@ -186,155 +262,13 @@ function Page(props) {
       <Answer bad={isRateShort}>{answerMain}</Answer>
       <h3>Here’s the math:</h3>
       <p>
-        In 2018, {name} had a net profit of {profitFormatted}
+        In 2018, {name} reported a net profit of {profitFormatted}
       </p>
       <Answer bad={isRateShort}>
         {answerMath} That’s an effective tax rate of {rateFormatted}.
         <sup>1</sup>
       </Answer>
       {answerMathExplaination}
-      <h3>What can you do about this?</h3>
-      <p>
-        Bernie Sanders and Elizabeth Warren are the only candidates at the top
-        of the presidential primaries that are not accepting super-PAC support.
-        <sup>2</sup> Help them now:
-      </p>
-      <Candidates>
-        <Candidate>
-          <picture>
-            <source srcSet="/graphics/sanders.webp" type="image/webp" />
-            <source srcSet="/graphics/sanders.jpg" type="image/jpeg" />
-            <img src="/graphics/sanders.jpg" alt="Portrait of Bernie Sanders" />
-          </picture>
-          <h4>Bernie Sanders</h4>
-          <a
-            href="https://berniesanders.com/volunteer/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Volunteer
-          </a>
-          <a
-            href="https://secure.actblue.com/donate/bern-site"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Donate
-          </a>
-        </Candidate>
-        <Candidate>
-          <picture>
-            <source srcSet="/graphics/warren.webp" type="image/webp" />
-            <source srcSet="/graphics/warren.jpg" type="image/jpeg" />
-            <img
-              src="/graphics/warren.jpg"
-              alt="Portrait of Elizabeth Warren"
-            />
-          </picture>
-          <h4>Elizabeth Warren</h4>
-          <a
-            href="https://elizabethwarren.com/take-action"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Volunteer
-          </a>
-          <a
-            href="https://secure.actblue.com/donate/warren-for-president"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Donate
-          </a>
-        </Candidate>
-      </Candidates>
-      <p>
-        <small>
-          Michael Bloomberg is self-funding his campaign, but also one of the
-          largest super-PAC donors himself.<sup>4</sup> Joe Biden’s campaign has
-          reversed their opposition to super-Pacs. <sup>5</sup>
-        </small>
-      </p>
-      <p>
-        Please share the results for {name} with your friends and family to help
-        them understand the problem with money in politics:
-      </p>
-      <Share
-        imageUrl={`${url}graphics/open-graph.png`}
-        title={`Tax Avoiders | ${name}`}
-        url={`${url}company/${nameEncoded}`}
-      />
-      <Link href="/" passHref>
-        <a>Search for another company?</a>
-      </Link>
-      <h3>Why does this matter?</h3>
-      <p>
-        The 2017 Tax Cuts and Jobs Act lowered the effective tax rate for
-        corporations from 35% to 21%. There are arguments to be made for both
-        sides: If companies pay less in taxes, they can hire more Americans and
-        keep the economy moving upward. On the other side, companies have been
-        finding loopholes in the tax laws for years. While one might think
-        lowering the tax rate for companies will encourage them to meet their
-        obligations to the government, it turns out that—just like in the
-        past—companies have found loopholes in the new tax laws that help them
-        pay less than 21%.
-      </p>
-      <p>
-        Why? One of the biggest reasons is that companies are actively
-        advocating for these tax loopholes! They spend huge sums to lobby
-        government officials and contribute funds to Political Action Committees
-        (PACs) that align with their interests. Basically, companies are able to
-        directly fund politicians that align with their interests, not the
-        American people’s interests.
-      </p>
-      <VictoryChart
-        animate={{
-          duration: 2000,
-          onLoad: { duration: 1000 }
-        }}
-        domainPadding={{ x: 10, y: 10 }}
-        padding={{ bottom: 50, left: 50, top: 0 }}
-      >
-        <VictoryAxis
-          crossAxis
-          label="US Budget Deficit"
-          style={{
-            axisLabel: { padding: 30 },
-            tickLabels: { color: "white", fontSize: 12 }
-          }}
-          // tickFormat specifies how ticks should be displayed
-          tickFormat={x => `${x}`}
-        />
-        <VictoryAxis
-          crossAxis
-          dependentAxis
-          style={{
-            axis: { stroke: "white" },
-            grid: { stroke: "grey" },
-            tickLabels: { fontSize: 12 }
-          }}
-          tickValues={[0, 500, 1000]}
-          // tickFormat specifies how ticks should be displayed
-          tickFormat={y => (y > 0 ? `$${y}b` : 0)}
-        />
-        <VictoryBar
-          data={deficit}
-          // data accessor for x values
-          x="year"
-          // data accessor for y values
-          y="amount"
-        />
-      </VictoryChart>
-      <p>
-        Until we elect candidates that refuse to take corporate money—Bernie
-        Sanders and Elizabeth Warren—corporate influence on our government will
-        continue to lead to corruption. Companies will continue to dodge their
-        tax obligations as our budget deficit rapidly increases. Note the jump
-        between 2018 and 2019 in the budget deficit.<sup>5</sup>
-      </p>
-      <Link href="/" passHref>
-        <a>Search for another company?</a>
-      </Link>
       <h3>Sources</h3>
       <ol>
         <Source>

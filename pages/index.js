@@ -190,11 +190,11 @@ function Page({
         }}
       />
       <Intro>
-        <Title>Did your company pay taxes?</Title>
+        <Title>Did your company pay its fair share of taxes?</Title>
         <p>
-          The Institute on Taxation and Economic Policy examined the 2018
-          financial filings of Fortune 500 companies. Search to see how much a
-          company paid in taxes under President Trump’s Tax Cuts and Jobs Act.
+          See how much Fortune 500 companies paid in taxes in 2018, and how much
+          they spent on lobbying and PACs. Our data comes from the Institute on
+          Taxation and Economic Policy, a non-partisan non-profit.
         </p>
         <Form onSubmit={handleSubmit}>
           <label htmlFor="search">

@@ -1,6 +1,8 @@
 import App from "next/app";
 import React from "react";
 import Link from "next/link";
+import Router from "next/router";
+import withGA from "next-ga";
 import NProgress from "nprogress";
 import Router from "next/router";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
@@ -17,6 +19,7 @@ Router.events.on("routeChangeError", () => NProgress.done());
 
 const theme = {
   colors: {
+    badRed: "#a0282d",
     libertyGreen: "rgb(183, 228, 207)",
     navyBlue: "rgb(35, 36, 68)"
   },
@@ -45,10 +48,6 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: ${({ theme }) => theme.type.c};
     padding-top: 4rem;
-  }
-
-  h1, h2, h3, p {
-    max-width: 24rem;
   }
 
   a {
@@ -94,7 +93,7 @@ const Name = styled.a`
   margin-bottom: 2rem;
 `;
 
-export default class MyApp extends App {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -124,3 +123,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default withGA("UA-43808769-16", Router)(MyApp);
