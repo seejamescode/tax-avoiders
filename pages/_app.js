@@ -4,7 +4,6 @@ import Link from "next/link";
 import Router from "next/router";
 import withGA from "next-ga";
 import NProgress from "nprogress";
-import Router from "next/router";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import Background from "../components/background";
 
