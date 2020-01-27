@@ -66,6 +66,24 @@ const Ul = styled.ul`
   margin-top: 0.5rem;
   padding: 0;
   width: 100%;
+
+  button {
+    display: flex;
+    position: relative;
+
+    :hover {
+      :after {
+        border: 4px solid ${({ theme }) => theme.colors.libertyGreen};
+        border-radius: 50%;
+        content: "";
+        height: calc(100% - 4px);
+        left: -2px;
+        position: absolute;
+        top: -2px;
+        width: calc(100% - 4px);
+      }
+    }
+  }
 `;
 
 const Share = ({ imageUrl, title, url }) => (

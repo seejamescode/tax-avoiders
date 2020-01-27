@@ -25,6 +25,7 @@ const Company = styled.div`
     0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
   padding-bottom: 100%;
   position: relative;
+  text-decoration: none;
   transition: box-shadow 0.125s cubic-bezier(0.2, 0, 0.38, 0.9),
     transform 0.125s cubic-bezier(0.2, 0, 0.38, 0.9);
   transform: translateY(0) scale(1);
@@ -44,6 +45,10 @@ const Company = styled.div`
       0 6px 6px rgba(0, 0, 0, 0.11), 0 10px 10px rgba(0, 0, 0, 0.11),
       0 18px 18px rgba(0, 0, 0, 0.11), 0 34px 34px rgba(0, 0, 0, 0.11);
     transform: translateY(-3px) scale(1.05);
+
+    a {
+      box-shadow: none;
+    }
   }
 `;
 
@@ -84,6 +89,12 @@ const Intro = styled.section`
   display: grid;
   grid-gap: 1rem;
   justify-self: center;
+  max-width: 28rem;
+`;
+
+const NoResults = styled.p`
+  margin: 0 auto;
+  max-width: 28rem;
 `;
 
 const Title = styled.h2`
@@ -211,7 +222,8 @@ function Page({
       </Intro>
       {transitions.map(
         ({ item, key, props }) =>
-          item && (
+          item &&
+          (totalPages > 0 ? (
             <Companies key={key} style={props}>
               {companies.map(item => (
                 <Company key={item.name}>
@@ -227,7 +239,14 @@ function Page({
                 </Company>
               ))}
             </Companies>
-          )
+          ) : (
+            <NoResults key="no-results">
+              Sorry. Out of all Fortune 500 companies, we only have data on the
+              379 companies that were profitable in 2018 and that provided
+              enough information to calculate effective federal income tax
+              rates.
+            </NoResults>
+          ))
       )}
       {totalPages > 1 ? (
         <Pagination onClick={search} page={page} totalPages={totalPages} />

@@ -40,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 2rem;
   }
 
+  h1 {
+    display: flex;
+  }
+
   h2 {
     font-size: ${({ theme }) => theme.type.a};
   }
@@ -50,8 +54,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    text-underline-position: under;
     color: inherit;
+    text-underline-position: under;
+    transition: box-shadow 0.1s ease-in-out;
+
+    :hover {
+      box-shadow: inset 0 0px 0 white, inset 0 -3px 0 ${({ theme }) =>
+        theme.colors.libertyGreen};
+      text-decoration-color: ${({ theme }) => theme.colors.libertyGreen};
+    }
   }
 
   /* Make clicks pass-through */
@@ -87,7 +98,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Name = styled.a`
-  display: block;
+  display: inline-block;
   font-size: 1rem;
   margin-bottom: 2rem;
 `;
