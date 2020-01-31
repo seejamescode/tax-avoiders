@@ -1,6 +1,6 @@
-# taxavoiders.org
+# [taxavoiders.org](taxavoiders.org)
 
-Did you know that 324 Fortune 500 companies did not pay their fair share of taxes in 2018? And combined, those 324 companies spent [x] on lobbying in 2017.
+Did you know that 324 Fortune 500 companies did not pay their fair share of taxes in 2018?
 
 We built a quick tool to help regular people understand the influence of corporate money in politics. As two politically interested, civically engaged people, we want people to better understand how corporate lobbying and PACs are connected to tax incentives, and, in turn, to vote for candidates who won’t take corporate money. Use this tool to see the connection between Fortune 500 companies how much or how little they pay in taxes, which aren’t, and how much money they’re spending to influence politicians with lobbying and PAC donations.
 
