@@ -1,4 +1,4 @@
-# [taxavoiders.org](taxavoiders.org)
+# [taxavoiders.org](https://taxavoiders.org)
 
 Did you know that 324 Fortune 500 companies did not pay their fair share of taxes in 2018?
 
