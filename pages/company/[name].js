@@ -14,11 +14,6 @@ const Answer = styled.p`
   text-align: center;
 `;
 
-const Bad = styled.span`
-  color: ${({ theme }) => theme.colors.badRed};
-  font-weight: bold;
-`;
-
 const Container = styled.div`
   display: grid;
   grid-gap: 2rem;
@@ -45,7 +40,6 @@ const Source = styled.li`
 `;
 
 function Page(props) {
-  console.log(props);
   const { details, name, profit, tax, url } = props;
   const isDonatingToPacs =
     details && details.gave_to_pac && details.gave_to_pac > 0;
@@ -74,7 +68,7 @@ function Page(props) {
       ? "Not even close."
       : rate === 0
       ? "No. They didn’t pay any taxes in 2018."
-      : "No. In fact, they got a tax refund! What in the world...";
+      : "No. In fact, they got a tax refund!";
   const answerMath =
     tax > 0 ? (
       `And they paid ${taxFormatted} in taxes.`
@@ -120,33 +114,6 @@ function Page(props) {
       </>
     ) : (
       <>
-        <h3>But how did this happen?</h3>
-        <p>
-          The current corporate tax rate is 21%. (This means that companies
-          should pay 21% of their profits back to the government to support
-          infrastructure, national defense, and government services for all of
-          us, among other things. Just like you do when you collect a
-          paycheck—you contribute some of that money back to the government, at
-          a particular rate.)
-        </p>
-        <p>
-          However, there are plenty of loopholes in tax law. Loopholes are when
-          laws are written loosely enough that companies can creatively
-          interpret their meaning.
-        </p>
-        <h3>
-          Why is tax law being written that way? Doesn’t the government want
-          their money?
-        </h3>
-        <p>
-          Sort of. But don’t forget that the government is made up of
-          politicians, who are real people with their own motives (to be
-          re-elected, make money, win favor, for example) that aren’t always
-          aligned with our best interests. So companies spend money lobbying
-          politicians for laws that favor the company and their best interests.
-          They literally ask for the loopholes. In meetings. Or swanky parties.
-          With politicians in Washington.
-        </p>
         <h3>What’s going on here?</h3>
         <p>
           Companies aren’t required to release their full tax returns, so it’s
@@ -162,29 +129,29 @@ function Page(props) {
           keep profits in countries outside the U.S. to avoid paying taxes on
           them.
         </p>
-        <p>U.S. tax law is endlessly complex.</p>
         {isLobbyingAndPacs ? (
           <>
             <h3>But also...</h3>
-            <p>
-              We know that {name} spent{" "}
-              <Bad>{formatMoney(details.lobbying)}</Bad> lobbying and donated an
-              additional <Bad>{formatMoney(details.gave_to_pac)}</Bad> to
-              Political Action Committees for the {details.cycle} cycle.
-            </p>
+            <Answer bad>
+              We know that {name} spent {formatMoney(details.lobbying)} lobbying
+              and donated an additional {formatMoney(details.gave_to_pac)} to
+              Political Action Committees for the {details.cycle} election
+              cycle.
+              <sup>8</sup>
+            </Answer>
             <p>
               For corporations, lobbying literally means hiring people to go to
               Washington, meet with politicians, and seek to influence their
               votes and decision-making. Lobbying is both complex and subtle;
-              you can learn more about it{" "}
+              you can learn more about{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Lobbying_in_the_United_States#Lobbying_as_a_business"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                here
+                lobbying as a business
               </a>
-              . But it’s entirely legal. PACs are another way companies seek to
+              . And, it’s entirely legal. PACs are another way companies seek to
               influence politics—by legally donating money to help or hurt
               politicians' election campaigns.
             </p>
@@ -192,11 +159,10 @@ function Page(props) {
         ) : isLobbying ? (
           <>
             <h3>But also...</h3>
-            <p>
-              We know that {name} spent{" "}
-              <Bad>{formatMoney(details.lobbying)}</Bad> lobbying for the{" "}
-              {details.cycle} cycle.
-            </p>
+            <Answer bad>
+              We know that {name} spent {formatMoney(details.lobbying)} lobbying
+              for the {details.cycle} election cycle.<sup>8</sup>
+            </Answer>
             <p>
               For corporations, lobbying literally means hiring people to go to
               Washington, meet with politicians, and seek to influence their
@@ -207,25 +173,50 @@ function Page(props) {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                here
+                lobbying as a business
               </a>
-              . But it’s entirely legal.
+              . And, it’s entirely legal.
             </p>
           </>
         ) : isDonatingToPacs ? (
           <>
             <h3>But also...</h3>
-            <p>
-              We know that {name} donated{" "}
-              <Bad>{formatMoney(details.gave_to_pac)}</Bad> to Political Action
-              Committees for the {details.cycle} cycle.
-            </p>
+            <Answer bad>
+              We know that {name} donated {formatMoney(details.gave_to_pac)} to
+              Political Action Committees for the {details.cycle} election
+              cycle.
+              <sup>8</sup>
+            </Answer>
             <p>
               For corporations, PACs are another way companies seek to influence
               politics—by legally donating money to help or hurt politicians'
               election campaigns.
             </p>
           </>
+        ) : (
+          ""
+        )}
+        {(isLobbying || isDonatingToPacs) && details.source ? (
+          <p>
+            If you want a sense of how much {name} spent on{" "}
+            {isLobbyingAndPacs
+              ? "lobbying and PACs"
+              : isLobbying
+              ? "lobbying"
+              : "PACs"}{" "}
+            for tax breaks specifically, you’ll have to{" "}
+            <a
+              href={`https://${details.source
+                .replace("https://", "")
+                .replace("http://", "")}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              dig in and do a little research yourself
+            </a>
+            . (The data is provided by the Center for Responsive Politics, using
+            reports from the Senate Office of Public Records).
+          </p>
         ) : (
           ""
         )}
@@ -237,9 +228,9 @@ function Page(props) {
   return (
     <Container>
       <NextSeo
-        description={`Did ${name} pay their fair share of taxes?`}
+        description={`You pay your taxes. But is ${name} paying their fair share? See who’s paying, who’s not, and how much they’re spending to influence the rules.`}
         openGraph={{
-          description: `Did ${name} pay their fair share of taxes?`,
+          description: `You pay your taxes. But is ${name} paying their fair share? See who’s paying, who’s not, and how much they’re spending to influence the rules.`,
           images: [
             {
               alt: "You always pay taxes, but do companies? TaxAvoiders.org",
@@ -337,6 +328,17 @@ function Page(props) {
             Elizabeth Warren Campaign: Photograph of Elizabeth Warren
           </a>
         </Source>
+        {isLobbying || isDonatingToPacs ? (
+          <Source>
+            <a
+              href="https://opensecrets.org"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Open Secrets for lobbying and PAC activity
+            </a>
+          </Source>
+        ) : null}
       </ol>
     </Container>
   );

@@ -28,8 +28,8 @@ export default async (req, res) => {
     }
 
     res.statusCode = 200;
-    // Cache on Zeit CDN for one month
-    res.setHeader("Cache-Control", "s-maxage=31536000, max-age=0");
+    // Cache on Zeit CDN for one year
+    res.setHeader("Cache-Control", "s-maxage=378432000, max-age=0");
     res.end(JSON.stringify(company));
   } catch (e) {
     console.error(e);

@@ -179,9 +179,12 @@ function Page({
   return (
     <Container>
       <NextSeo
-        description={"You always pay taxes, but do companies?"}
+        description={
+          "You pay your taxes. But are big companies paying their fair share? See who’s paying, who’s not, and how much they’re spending to influence the rules."
+        }
         openGraph={{
-          description: "You always pay taxes, but do companies?",
+          description:
+            "You pay your taxes. But are big companies paying their fair share? See who’s paying, who’s not, and how much they’re spending to influence the rules.",
           images: [
             {
               alt: "You always pay taxes, but do companies? TaxAvoiders.org",

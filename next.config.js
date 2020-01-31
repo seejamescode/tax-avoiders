@@ -9,6 +9,7 @@ const withOffline = require("next-offline");
 module.exports = withImages(
   withOffline({
     target: "serverless",
+    transformManifest: manifest => ["/"].concat(manifest), // add the homepage to the cache
     webpack: function(config) {
       if (isDev) {
         config.plugins = config.plugins || [];
@@ -24,8 +25,11 @@ module.exports = withImages(
 
       return config;
     },
+    // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
+    // turn on the SW in dev mode so that we can actually test it
+    generateInDevMode: true,
     workboxOpts: {
-      swDest: "public/service-worker.js",
+      swDest: "static/service-worker.js",
       runtimeCaching: [
         {
           urlPattern: /^https?.*/,

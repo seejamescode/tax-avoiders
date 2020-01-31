@@ -1,7 +1,7 @@
 {
   "short_name": "Tax Avoiders",
   "name": "Tax Avoiders",
-  "description": "You always pay taxes, but do companies?",
+  "description": "You pay your taxes. But are big companies paying their fair share? See who’s paying, who’s not, and how much they’re spending to influence the rules.",
   "icons": [
     {
       "src": "/graphics/icon-57.png",
@@ -30,7 +30,6 @@
     }
   ],
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
   "theme_color": "#232444",
   "background_color": "#fff"

@@ -25,8 +25,8 @@ export default (req, res) => {
   );
   const totalPages = Math.ceil(results.length / pageSize);
 
-  // Cache on Zeit CDN for one day
-  res.setHeader("Cache-Control", "s-maxage=1051200, max-age=0");
+  // Cache on Zeit CDN for one year
+  res.setHeader("Cache-Control", "s-maxage=378432000, max-age=0");
   res.end(
     JSON.stringify({
       companies: resultsTrimmed,

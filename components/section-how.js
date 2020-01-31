@@ -30,11 +30,11 @@ const Candidates = styled.div`
 
 const SectionHow = ({ name, nameEncoded, url }) => (
   <>
-    <h3>Does this seem unfair to you? Well, you can do something about it.</h3>
+    <h3>Does this seem unfair to you? You can do something about it.</h3>
     <p>
       Bernie Sanders and Elizabeth Warren are the only candidates at the top of
       the presidential primaries that are not accepting super-PAC support.
-      <sup>2</sup> Help them now:
+      <sup>2</sup>
     </p>
     <Candidates>
       <Candidate>
@@ -44,20 +44,24 @@ const SectionHow = ({ name, nameEncoded, url }) => (
           <img src="/graphics/sanders.jpg" alt="Portrait of Bernie Sanders" />
         </picture>
         <h4>Bernie Sanders</h4>
-        <a
-          href="https://berniesanders.com/volunteer/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Volunteer
-        </a>
-        <a
-          href="https://secure.actblue.com/donate/bern-site"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Donate
-        </a>
+        <p>
+          <a
+            href="https://berniesanders.com/volunteer/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Volunteer
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://secure.actblue.com/donate/bern-site"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Donate
+          </a>
+        </p>
       </Candidate>
       <Candidate>
         <picture>
@@ -66,20 +70,24 @@ const SectionHow = ({ name, nameEncoded, url }) => (
           <img src="/graphics/warren.jpg" alt="Portrait of Elizabeth Warren" />
         </picture>
         <h4>Elizabeth Warren</h4>
-        <a
-          href="https://elizabethwarren.com/take-action"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Volunteer
-        </a>
-        <a
-          href="https://secure.actblue.com/donate/warren-for-president"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Donate
-        </a>
+        <p>
+          <a
+            href="https://elizabethwarren.com/take-action"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Volunteer
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://secure.actblue.com/donate/warren-for-president"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Donate
+          </a>
+        </p>
       </Candidate>
     </Candidates>
     <p>
@@ -90,8 +98,8 @@ const SectionHow = ({ name, nameEncoded, url }) => (
       </small>
     </p>
     <p>
-      Please share the results for {name} with your friends and family to help
-      them understand the problem with money in politics:
+      Please share the results for {name} with your network to help them
+      understand the problem with money in politics:
     </p>
     <Share
       imageUrl={`${url}graphics/open-graph.png`}

@@ -378,8 +378,7 @@
     "industry": "Retail & wholesale trade",
     "name": "Beacon Roofing Supply",
     "profit": 62000000,
-    "tax": -4000000,
-    "openSecrets": ""
+    "tax": -4000000
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -413,8 +412,7 @@
     "industry": "Retail & wholesale trade",
     "name": "BJ's Wholesale Club",
     "profit": 127000000,
-    "tax": 14000000,
-    "openSecrets": ""
+    "tax": 14000000
   },
   {
     "industry": "Financial",
@@ -444,8 +442,7 @@
     "name": "Brighthouse Financial",
     "profit": 989000000,
     "tax": -166000000,
-    "symbol": null,
-    "openSecrets": ""
+    "symbol": null
   },
   {
     "industry": "Pharmaceuticals & medical products",
@@ -474,7 +471,7 @@
     "name": "C.H. Robinson Worldwide",
     "profit": 682000000,
     "tax": 148000000,
-    "openSecrets": ""
+    "openSecrets": "D000032477"
   },
   {
     "industry": "Food & beverages & tobacco",
@@ -518,14 +515,14 @@
     "name": "CB Richard Ellis Group",
     "profit": 764000000,
     "tax": 160000000,
-    "openSecrets": ""
+    "openSecrets": "D000021899"
   },
   {
     "industry": "Miscellaneous services",
     "name": "CBS",
     "profit": 1662000000,
     "tax": 92000000,
-    "openSecrets": ""
+    "openSecrets": "D000019792"
   },
   {
     "industry": "Chemicals",
@@ -561,8 +558,7 @@
     "industry": "Chemicals",
     "name": "CF Industries Holdings",
     "profit": 411000000,
-    "tax": 5000000,
-    "openSecrets": ""
+    "tax": 5000000
   },
   {
     "industry": "Financial",
@@ -599,14 +595,14 @@
     "name": "Chevron",
     "profit": 4547000000,
     "tax": -181000000,
-    "openSecrets": ""
+    "openSecrets": "D000000015"
   },
   {
     "industry": "Health care",
     "name": "Cigna",
     "profit": 2996000000,
     "tax": 804000000,
-    "openSecrets": ""
+    "openSecrets": "D000000222"
   },
   {
     "industry": "Financial",
@@ -614,7 +610,7 @@
     "profit": 251000000,
     "tax": 11000000,
     "symbol": "CINF",
-    "openSecrets": ""
+    "openSecrets": "D000032579"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -650,8 +646,7 @@
     "name": "Cliffs Natural Resources",
     "profit": 565000000,
     "tax": 0,
-    "symbol": null,
-    "openSecrets": ""
+    "symbol": null
   },
   {
     "industry": "Household & personal products",
@@ -688,15 +683,14 @@
     "industry": "Miscellaneous manufacturing",
     "name": "Commercial Metals",
     "profit": 84000000,
-    "tax": 20000000,
-    "openSecrets": ""
+    "tax": 20000000
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "ConAgra Foods",
     "profit": 804000000,
     "tax": 125000000,
-    "openSecrets": ""
+    "openSecrets": "D000000242"
   },
   {
     "industry": "Oil, gas & pipelines",
@@ -735,7 +729,7 @@
     "name": "Corning",
     "profit": 450000000,
     "tax": 274000000,
-    "openSecrets": ""
+    "openSecrets": "D000000457"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -757,28 +751,27 @@
     "name": "Cummins",
     "profit": 977000000,
     "tax": 151000000,
-    "openSecrets": ""
+    "openSecrets": "D000021945"
   },
   {
     "industry": "Oil, gas & pipelines",
     "name": "CVR Energy",
     "profit": 507000000,
-    "tax": 31000000,
-    "openSecrets": ""
+    "tax": 31000000
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "CVS Caremark",
     "profit": 7056000000,
     "tax": 1480000000,
-    "openSecrets": ""
+    "openSecrets": "D000025214"
   },
   {
     "industry": "Miscellaneous manufacturing",
     "name": "D.R. Horton",
     "profit": 2006000000,
     "tax": 373000000,
-    "openSecrets": ""
+    "openSecrets": "D000033266"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -814,7 +807,7 @@
     "name": "Delek US Holdings",
     "profit": 478000000,
     "tax": 121000000,
-    "openSecrets": ""
+    "openSecrets": "D000069873"
   },
   {
     "industry": "Transportation",
@@ -837,14 +830,14 @@
     "name": "Dick's Sporting Goods",
     "profit": 409000000,
     "tax": 94000000,
-    "openSecrets": ""
+    "openSecrets": "D000050167"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Dillard's",
     "profit": 205000000,
     "tax": 35000000,
-    "openSecrets": ""
+    "openSecrets": "D000042637"
   },
   {
     "industry": "Financial",
@@ -860,7 +853,7 @@
     "profit": 1095000000,
     "tax": 323000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000033184"
   },
   {
     "industry": "Telecommunications",
@@ -904,7 +897,7 @@
     "name": "Dover",
     "profit": 330000000,
     "tax": 47000000,
-    "openSecrets": ""
+    "openSecrets": "D000059154"
   },
   {
     "industry": "Chemicals",
@@ -1007,7 +1000,7 @@
     "name": "Exelon",
     "profit": 2233000000,
     "tax": 226000000,
-    "openSecrets": ""
+    "openSecrets": "D000000368"
   },
   {
     "industry": "Transportation",
@@ -1036,7 +1029,7 @@
     "name": "FedEx",
     "profit": 2312000000,
     "tax": -107000000,
-    "openSecrets": ""
+    "openSecrets": "d000000089"
   },
   {
     "industry": "Financial",
@@ -1073,14 +1066,14 @@
     "name": "First Data",
     "profit": 559000000,
     "tax": -121000000,
-    "openSecrets": ""
+    "openSecrets": "D000025815"
   },
   {
     "industry": "Utilities, gas and electric",
     "name": "FirstEnergy",
     "profit": 1495000000,
     "tax": -16000000,
-    "openSecrets": ""
+    "openSecrets": "D000000531"
   },
   {
     "industry": "Financial Data Services",
@@ -1124,21 +1117,21 @@
     "name": "Freeport-McMoRan Copper & Gold",
     "profit": 391000000,
     "tax": -75000000,
-    "openSecrets": ""
+    "openSecrets": "D000021995"
   },
   {
     "industry": "Publishing, printing",
     "name": "Gannett",
     "profit": 6000000,
     "tax": -11000000,
-    "openSecrets": ""
+    "openSecrets": "D000051182"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Gap",
     "profit": 1142000000,
     "tax": 197000000,
-    "openSecrets": ""
+    "openSecrets": "D000000547"
   },
   {
     "industry": "Aerospace & defense",
@@ -1146,7 +1139,7 @@
     "profit": 3459000000,
     "tax": 587000000,
     "symbol": "GD",
-    "openSecrets": ""
+    "openSecrets": "D000000165"
   },
   {
     "industry": "Food & beverages & tobacco",
@@ -1213,37 +1206,34 @@
     "name": "H&R Block",
     "profit": 377000000,
     "tax": 75000000,
-    "symbol": "HRB",
-    "openSecrets": ""
+    "symbol": "HRB"
   },
   {
     "industry": "Oil, gas & pipelines",
     "name": "Halliburton",
     "profit": 1082000000,
     "tax": -19000000,
-    "openSecrets": ""
+    "openSecrets": "D000000281"
   },
   {
     "industry": "Miscellaneous manufacturing",
     "name": "Harley-Davidson",
     "profit": 570000000,
     "tax": 136000000,
-    "symbol": "HOG",
-    "openSecrets": ""
+    "symbol": "HOG"
   },
   {
     "industry": "Computers, office equip, software, data",
     "name": "Harris",
     "profit": 1068000000,
-    "tax": 105000000,
-    "openSecrets": ""
+    "tax": 105000000
   },
   {
     "industry": "Financial",
     "name": "Hartford Financial Services",
     "profit": 1753000000,
     "tax": -18000000,
-    "openSecrets": ""
+    "openSecrets": "D000000677"
   },
   {
     "industry": "Health care",
@@ -1251,14 +1241,14 @@
     "profit": 4498000000,
     "tax": 759000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000000445"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "HD Supply",
     "profit": 508000000,
     "tax": 0,
-    "openSecrets": ""
+    "openSecrets": "D000044206"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1266,21 +1256,19 @@
     "profit": 470000000,
     "tax": 103000000,
     "symbol": "HSIC",
-    "openSecrets": ""
+    "openSecrets": "D000034427"
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "Hershey",
     "profit": 1157000000,
-    "tax": 158000000,
-    "openSecrets": ""
+    "tax": 158000000
   },
   {
     "industry": "Miscellaneous services",
     "name": "Hilton",
     "profit": 828000000,
-    "tax": 210000000,
-    "openSecrets": ""
+    "tax": 210000000
   },
   {
     "industry": "Oil, gas & pipelines",
@@ -1288,7 +1276,7 @@
     "profit": 1483000000,
     "tax": 239000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000026132"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1296,14 +1284,14 @@
     "profit": 13159000000,
     "tax": 2557000000,
     "symbol": "HD",
-    "openSecrets": ""
+    "openSecrets": "D000000419"
   },
   {
     "industry": "Industrial machinery",
     "name": "Honeywell International",
     "profit": 2830000000,
     "tax": -71000000,
-    "openSecrets": ""
+    "openSecrets": "D000000334"
   },
   {
     "industry": "Food & beverages & tobacco",
@@ -1311,14 +1299,14 @@
     "profit": 1099000000,
     "tax": 134000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000026518"
   },
   {
     "industry": "Health care",
     "name": "Humana",
     "profit": 2005000000,
     "tax": 139000000,
-    "openSecrets": ""
+    "openSecrets": "D000000652"
   },
   {
     "industry": "Aerospace & defense",
@@ -1326,14 +1314,13 @@
     "profit": 971000000,
     "tax": 127000000,
     "symbol": "HII",
-    "openSecrets": ""
+    "openSecrets": "D000064813"
   },
   {
     "industry": "Chemicals",
     "name": "Huntsman",
     "profit": 160000000,
-    "tax": 20000000,
-    "openSecrets": ""
+    "tax": 20000000
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -1341,21 +1328,21 @@
     "profit": 1708000000,
     "tax": 373000000,
     "symbol": "ITW",
-    "openSecrets": ""
+    "openSecrets": "D000022038"
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "Ingredion",
     "profit": 120000000,
     "tax": 13000000,
-    "openSecrets": ""
+    "openSecrets": "D000069869"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Insight Enterprises",
     "profit": 142000000,
     "tax": 19000000,
-    "openSecrets": ""
+    "openSecrets": "D000034686"
   },
   {
     "industry": "Financial",
@@ -1363,7 +1350,7 @@
     "profit": 1264000000,
     "tax": 140000000,
     "symbol": "ICE",
-    "openSecrets": ""
+    "openSecrets": "D000026637"
   },
   {
     "industry": "Computers, office equip, software, data",
@@ -1371,7 +1358,7 @@
     "profit": 500000000,
     "tax": -342000000,
     "symbol": "IBM",
-    "openSecrets": ""
+    "openSecrets": "D000000720"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -1379,7 +1366,7 @@
     "profit": 1413000000,
     "tax": 252000000,
     "symbol": "IP",
-    "openSecrets": ""
+    "openSecrets": "D000000171"
   },
   {
     "industry": "Miscellaneous services",
@@ -1387,43 +1374,42 @@
     "profit": 437000000,
     "tax": 38000000,
     "symbol": "IPG",
-    "openSecrets": ""
+    "openSecrets": "D000021897"
   },
   {
     "industry": "Financial",
     "name": "INTL FCStone",
     "profit": 9000000,
     "tax": -10000000,
-    "openSecrets": ""
+    "openSecrets": "D000069786"
   },
   {
     "industry": "Financial",
     "name": "Intuit",
     "profit": 1426000000,
     "tax": 197000000,
-    "symbol": null,
-    "openSecrets": ""
+    "symbol": null
   },
   {
     "industry": "Transportation",
     "name": "J.B. Hunt Transport Services",
     "profit": 614000000,
     "tax": 22000000,
-    "openSecrets": ""
+    "openSecrets": "D000061887"
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "J.M. Smucker",
     "profit": 827000000,
     "tax": 231000000,
-    "openSecrets": ""
+    "openSecrets": "D000034869"
   },
   {
     "industry": "Financial",
     "name": "J.P. Morgan Chase & Co.",
     "profit": 31414000000,
     "tax": 2854000000,
-    "openSecrets": ""
+    "openSecrets": "d000000103"
   },
   {
     "industry": "Engineering & construction",
@@ -1431,49 +1417,47 @@
     "profit": 282000000,
     "tax": 19000000,
     "symbol": "J",
-    "openSecrets": ""
+    "openSecrets": "D000000371"
   },
   {
     "industry": "Financial",
     "name": "Jefferies Financial Group",
     "profit": 246000000,
     "tax": 7000000,
-    "openSecrets": ""
+    "openSecrets": "D000070957"
   },
   {
     "industry": "Transportation",
     "name": "JetBlue Airways",
     "profit": 219000000,
     "tax": -60000000,
-    "openSecrets": ""
+    "openSecrets": "D000034842"
   },
   {
     "industry": "Miscellaneous services",
     "name": "Jones Lang LaSalle",
     "profit": 88000000,
     "tax": 39000000,
-    "openSecrets": ""
+    "openSecrets": "D000026902"
   },
   {
     "industry": "Miscellaneous services",
     "name": "KBR",
     "profit": 42000000,
-    "tax": 1000000,
-    "openSecrets": ""
+    "tax": 1000000
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "Kellogg",
     "profit": 1166000000,
-    "tax": 23000000,
-    "openSecrets": ""
+    "tax": 23000000
   },
   {
     "industry": "Miscellaneous services",
     "name": "Kelly Services",
     "profit": 50000000,
     "tax": 6000000,
-    "openSecrets": ""
+    "openSecrets": "D000026980"
   },
   {
     "industry": "Financial",
@@ -1481,7 +1465,7 @@
     "profit": 2141000000,
     "tax": 184000000,
     "symbol": "KEY",
-    "openSecrets": ""
+    "openSecrets": "D000000805"
   },
   {
     "industry": "Household & personal products",
@@ -1489,43 +1473,41 @@
     "profit": 1543000000,
     "tax": 177000000,
     "symbol": "KMB",
-    "openSecrets": ""
+    "openSecrets": "D000035098"
   },
   {
     "industry": "Oil, gas & pipelines",
     "name": "Kinder Morgan",
     "profit": 1784000000,
     "tax": -22000000,
-    "symbol": "KMI",
-    "openSecrets": ""
+    "symbol": "KMI"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Kohl's",
     "profit": 999000000,
-    "tax": 229000000,
-    "openSecrets": ""
+    "tax": 229000000
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Kroger",
     "profit": 3870000000,
     "tax": 775000000,
-    "openSecrets": ""
+    "openSecrets": "D000027084"
   },
   {
     "industry": "Aerospace & defense",
     "name": "L-3 Communications",
     "profit": 612000000,
     "tax": 30000000,
-    "openSecrets": ""
+    "openSecrets": "D000022068"
   },
   {
     "industry": "Health care",
     "name": "Laboratory Corp. of America",
     "profit": 876000000,
     "tax": 211000000,
-    "openSecrets": ""
+    "openSecrets": "D000027104"
   },
   {
     "industry": "Miscellaneous services",
@@ -1533,14 +1515,13 @@
     "profit": 3162000000,
     "tax": 15000000,
     "symbol": "LVS",
-    "openSecrets": ""
+    "openSecrets": "D000020980"
   },
   {
     "industry": "Motor vehicles and parts",
     "name": "Lear",
     "profit": 726000000,
-    "tax": 35000000,
-    "openSecrets": ""
+    "tax": 35000000
   },
   {
     "industry": "Computers, office equip, software, data",
@@ -1548,43 +1529,42 @@
     "profit": 587000000,
     "tax": 54000000,
     "symbol": "LDOS",
-    "openSecrets": ""
+    "openSecrets": "D000000369"
   },
   {
     "industry": "Engineering & construction",
     "name": "Lennar Corporation",
     "profit": 2232000000,
     "tax": 246000000,
-    "openSecrets": ""
+    "openSecrets": "D000053016"
   },
   {
     "industry": "Miscellaneous manufacturing",
     "name": "Levi Strauss",
     "profit": 144000000,
     "tax": -25000000,
-    "openSecrets": ""
+    "openSecrets": "D000035349"
   },
   {
     "industry": "Internet Services & Retailing",
     "name": "Liberty Media",
     "profit": 1022000000,
     "tax": 14000000,
-    "openSecrets": ""
+    "openSecrets": "D000067699"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Limited Brands",
     "profit": 834000000,
     "tax": 212000000,
-    "openSecrets": ""
+    "openSecrets": "D000000225"
   },
   {
     "industry": "Financial",
     "name": "Lincoln National",
     "profit": 1885000000,
     "tax": 91000000,
-    "symbol": "LNC",
-    "openSecrets": ""
+    "symbol": "LNC"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1613,7 +1593,7 @@
     "name": "Loews",
     "profit": 606000000,
     "tax": 6000000,
-    "openSecrets": ""
+    "openSecrets": "D000000207"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1627,7 +1607,7 @@
     "name": "M&T Bank Corp",
     "profit": 2394000000,
     "tax": 408000000,
-    "openSecrets": ""
+    "openSecrets": "D000035524"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1685,7 +1665,7 @@
     "name": "Masco",
     "profit": 788000000,
     "tax": 126000000,
-    "openSecrets": ""
+    "openSecrets": "D000027441"
   },
   {
     "industry": "Engineering & construction",
@@ -1699,14 +1679,14 @@
     "name": "MasterCard",
     "profit": 3441000000,
     "tax": 627000000,
-    "openSecrets": ""
+    "openSecrets": "D000022099"
   },
   {
     "industry": "Miscellaneous services",
     "name": "McDonald's",
     "profit": 2034000000,
     "tax": 217000000,
-    "openSecrets": ""
+    "openSecrets": "D000000373"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -1727,7 +1707,7 @@
     "name": "Merck",
     "profit": 3517000000,
     "tax": 412000000,
-    "openSecrets": ""
+    "openSecrets": "D000000275"
   },
   {
     "industry": "Miscellaneous services",
@@ -1742,7 +1722,7 @@
     "name": "Michaels",
     "profit": 291000000,
     "tax": 61000000,
-    "openSecrets": ""
+    "openSecrets": "D000042000"
   },
   {
     "industry": "Computers, office equip, software, data",
@@ -1786,7 +1766,7 @@
     "name": "Mosaic",
     "profit": 320000000,
     "tax": 24000000,
-    "openSecrets": ""
+    "openSecrets": "D000023178"
   },
   {
     "industry": "Computers, office equip, software, data",
@@ -1845,7 +1825,7 @@
     "profit": 97000000,
     "tax": 5000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000000227"
   },
   {
     "industry": "Utilities, gas and electric",
@@ -1869,7 +1849,7 @@
     "profit": 736000000,
     "tax": 147000000,
     "symbol": "JWN",
-    "openSecrets": ""
+    "openSecrets": "D000036243"
   },
   {
     "industry": "Transportation",
@@ -1883,7 +1863,7 @@
     "name": "Northern Trust",
     "profit": 1076000000,
     "tax": 132000000,
-    "openSecrets": ""
+    "openSecrets": "D000028035"
   },
   {
     "industry": "Aerospace & defense",
@@ -1891,7 +1871,7 @@
     "profit": 3714000000,
     "tax": 292000000,
     "symbol": "NOC",
-    "openSecrets": ""
+    "openSecrets": "D000000170"
   },
   {
     "industry": "Metals & metal products",
@@ -1913,7 +1893,7 @@
     "profit": 922000000,
     "tax": 126000000,
     "symbol": "NVR",
-    "openSecrets": ""
+    "openSecrets": "D000023224"
   },
   {
     "industry": "Oil, gas & pipelines",
@@ -1935,7 +1915,7 @@
     "name": "Olin",
     "profit": 282000000,
     "tax": 21000000,
-    "openSecrets": ""
+    "openSecrets": "D000028131"
   },
   {
     "industry": "Oil, gas & pipelines",
@@ -1957,7 +1937,7 @@
     "profit": 1634000000,
     "tax": 290000000,
     "symbol": "ORLY",
-    "openSecrets": ""
+    "openSecrets": "D000042427"
   },
   {
     "industry": "Motor vehicles and parts",
@@ -1985,28 +1965,28 @@
     "name": "Packaging Corp. of America",
     "profit": 927000000,
     "tax": 150000000,
-    "openSecrets": ""
+    "openSecrets": "D000067190"
   },
   {
     "industry": "Industrial machinery",
     "name": "Parker Hannifin",
     "profit": 1104000000,
     "tax": 146000000,
-    "openSecrets": ""
+    "openSecrets": "D000028227"
   },
   {
     "industry": "Pharmaceuticals & medical products",
     "name": "Patterson",
     "profit": 72000000,
     "tax": 0,
-    "openSecrets": ""
+    "openSecrets": "D000036547"
   },
   {
     "industry": "Motor vehicles and parts",
     "name": "Penske Automotive Group",
     "profit": 393000000,
     "tax": -13000000,
-    "openSecrets": ""
+    "openSecrets": "D000036594"
   },
   {
     "industry": "Food & beverages & tobacco",
@@ -2027,14 +2007,14 @@
     "name": "Phillips",
     "profit": 5461000000,
     "tax": 739000000,
-    "openSecrets": ""
+    "openSecrets": "D000019668"
   },
   {
     "industry": "Miscellaneous manufacturing",
     "name": "Phillips-Van Heusen",
     "profit": 18000000,
     "tax": -30000000,
-    "openSecrets": ""
+    "openSecrets": "D000028417"
   },
   {
     "industry": "Oil, gas & pipelines",
@@ -2056,7 +2036,7 @@
     "name": "PNC Financial Services Group",
     "profit": 6252000000,
     "tax": 773000000,
-    "openSecrets": ""
+    "openSecrets": "D000028398"
   },
   {
     "industry": "Motor vehicles and parts",
@@ -2070,14 +2050,13 @@
     "name": "Polo Ralph Lauren",
     "profit": 54000000,
     "tax": 5000000,
-    "openSecrets": ""
+    "openSecrets": "D000036748"
   },
   {
     "industry": "Food & beverages & tobacco",
     "name": "Post Holdings",
     "profit": 368000000,
-    "tax": 17000000,
-    "openSecrets": ""
+    "tax": 17000000
   },
   {
     "industry": "Chemicals",
@@ -2093,7 +2072,7 @@
     "profit": 1110000000,
     "tax": -19000000,
     "symbol": "PPL",
-    "openSecrets": ""
+    "openSecrets": "D000022195"
   },
   {
     "industry": "Financial",
@@ -2115,7 +2094,7 @@
     "name": "Progressive",
     "profit": 3163000000,
     "tax": 673000000,
-    "openSecrets": ""
+    "openSecrets": "D000040450"
   },
   {
     "industry": "Financial",
@@ -2166,7 +2145,7 @@
     "name": "Qurate Retail Group",
     "profit": 648000000,
     "tax": 126000000,
-    "openSecrets": ""
+    "openSecrets": "D000000959"
   },
   {
     "industry": "Financial",
@@ -2181,7 +2160,7 @@
     "name": "Raytheon",
     "profit": 2937000000,
     "tax": 245000000,
-    "openSecrets": ""
+    "openSecrets": "D000000175"
   },
   {
     "industry": "Miscellaneous services",
@@ -2232,7 +2211,7 @@
     "profit": 722000000,
     "tax": -40000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000028783"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2262,7 +2241,7 @@
     "profit": 160000000,
     "tax": 4000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000067120"
   },
   {
     "industry": "Computers, office equip, software, data",
@@ -2277,7 +2256,7 @@
     "name": "Sanmina-SCI",
     "profit": 16000000,
     "tax": 0,
-    "openSecrets": ""
+    "openSecrets": "D000059564"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -2315,7 +2294,7 @@
     "name": "Southern",
     "profit": 2561000000,
     "tax": 167000000,
-    "openSecrets": ""
+    "openSecrets": "D000000168"
   },
   {
     "industry": "Transportation",
@@ -2323,7 +2302,7 @@
     "profit": 3104000000,
     "tax": 338000000,
     "symbol": "LUV",
-    "openSecrets": ""
+    "openSecrets": "D000000785"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2337,14 +2316,13 @@
     "name": "Spirit AeroSystems Holdings",
     "profit": 650000000,
     "tax": 164000000,
-    "openSecrets": ""
+    "openSecrets": "D000029158"
   },
   {
     "industry": "Industrial machinery",
     "name": "SPX",
     "profit": 66000000,
-    "tax": -4000000,
-    "openSecrets": ""
+    "tax": -4000000
   },
   {
     "industry": "Industrial machinery",
@@ -2367,7 +2345,7 @@
     "profit": 1191000000,
     "tax": 27000000,
     "symbol": "STT",
-    "openSecrets": ""
+    "openSecrets": "D000029194"
   },
   {
     "industry": "Metals & metal products",
@@ -2381,7 +2359,7 @@
     "name": "Stryker",
     "profit": 479000000,
     "tax": 126000000,
-    "openSecrets": ""
+    "openSecrets": "D000030157"
   },
   {
     "industry": "Financial",
@@ -2410,15 +2388,14 @@
     "industry": "Retail & wholesale trade",
     "name": "Tapestry",
     "profit": 307000000,
-    "tax": -24000000,
-    "openSecrets": ""
+    "tax": -24000000
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "Target",
     "profit": 2826000000,
     "tax": 257000000,
-    "openSecrets": ""
+    "openSecrets": "D000000619"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2476,7 +2453,7 @@
     "name": "Travelers Cos.",
     "profit": 3031000000,
     "tax": 424000000,
-    "openSecrets": ""
+    "openSecrets": "D000021773"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -2489,8 +2466,7 @@
     "industry": "Engineering & construction",
     "name": "Tutor Perini",
     "profit": 97000000,
-    "tax": 21000000,
-    "openSecrets": ""
+    "tax": 21000000
   },
   {
     "industry": "Financial",
@@ -2498,14 +2474,14 @@
     "profit": 8280000000,
     "tax": 1287000000,
     "symbol": "USB",
-    "openSecrets": ""
+    "openSecrets": "D000000487"
   },
   {
     "industry": "Utilities, gas and electric",
     "name": "UGI",
     "profit": 446000000,
     "tax": -2000000,
-    "openSecrets": ""
+    "openSecrets": "D000029544"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2528,7 +2504,7 @@
     "profit": 2519000000,
     "tax": 10000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000021464"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2551,14 +2527,14 @@
     "profit": 1347000000,
     "tax": 42000000,
     "symbol": "URI",
-    "openSecrets": ""
+    "openSecrets": "D000029582"
   },
   {
     "industry": "Metals & metal products",
     "name": "United States Steel",
     "profit": 432000000,
     "tax": -40000000,
-    "openSecrets": ""
+    "openSecrets": "D000019533"
   },
   {
     "industry": "Aerospace & defense",
@@ -2566,7 +2542,7 @@
     "profit": 3419000000,
     "tax": 442000000,
     "symbol": "UTX",
-    "openSecrets": ""
+    "openSecrets": "D000000209"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2619,7 +2595,7 @@
     "name": "VF",
     "profit": 314000000,
     "tax": 108000000,
-    "openSecrets": ""
+    "openSecrets": "D000030824"
   },
   {
     "industry": "Miscellaneous services",
@@ -2627,14 +2603,14 @@
     "profit": 1319000000,
     "tax": 67000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000000190"
   },
   {
     "industry": "Financial Data Services",
     "name": "Visa",
     "profit": 8329000000,
     "tax": 1672000000,
-    "openSecrets": ""
+    "openSecrets": "D000029689"
   },
   {
     "industry": "Motor vehicles and parts",
@@ -2655,14 +2631,14 @@
     "name": "W.R. Berkley",
     "profit": 750000000,
     "tax": 183000000,
-    "openSecrets": ""
+    "openSecrets": "D000029929"
   },
   {
     "industry": "Retail & wholesale trade",
     "name": "W.W. Grainger",
     "profit": 1131000000,
     "tax": 166000000,
-    "openSecrets": ""
+    "openSecrets": "D000031166"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2677,7 +2653,7 @@
     "name": "Wal-Mart Stores",
     "profit": 15382000000,
     "tax": 2350000000,
-    "openSecrets": ""
+    "openSecrets": "d000000367"
   },
   {
     "industry": "Miscellaneous services",
@@ -2691,7 +2667,7 @@
     "name": "Waste Management",
     "profit": 2103000000,
     "tax": 261000000,
-    "openSecrets": ""
+    "openSecrets": "D000000161"
   },
   {
     "industry": "Utilities, gas and electric",
@@ -2742,7 +2718,7 @@
     "name": "Westrock",
     "profit": 709000000,
     "tax": -4000000,
-    "openSecrets": ""
+    "openSecrets": "D000067804"
   },
   {
     "industry": "Miscellaneous manufacturing",
@@ -2756,7 +2732,7 @@
     "name": "Williams",
     "profit": 1828000000,
     "tax": -83000000,
-    "openSecrets": ""
+    "openSecrets": "D000043218"
   },
   {
     "industry": "Retail & wholesale trade",
@@ -2771,14 +2747,14 @@
     "profit": 177000000,
     "tax": 34000000,
     "symbol": null,
-    "openSecrets": ""
+    "openSecrets": "D000029934"
   },
   {
     "industry": "Utilities, gas and electric",
     "name": "Xcel Energy",
     "profit": 1434000000,
     "tax": -34000000,
-    "openSecrets": ""
+    "openSecrets": "D000022329"
   },
   {
     "industry": "Computers, office equip, software, data",

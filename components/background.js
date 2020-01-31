@@ -5,7 +5,7 @@ import * as meshline from "three.meshline";
 
 extend(meshline);
 
-const numLines = 5;
+const numLines = 10;
 const lines = new Array(numLines).fill();
 
 function Fatline() {
