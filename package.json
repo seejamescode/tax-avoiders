@@ -27,7 +27,7 @@
     "three.meshline": "^1.2.0",
     "threejs-meshline": "^2.0.9",
     "use-debounce": "^3.3.0",
-    "victory": "^34.0.0"
+    "victory": "^36.6.8"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
